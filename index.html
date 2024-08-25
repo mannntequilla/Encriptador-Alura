@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo-Alura.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="seccion-uno">
+            <textarea class="input" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="advertencia">
+                <img src="img/warning-icon.png" alt="icono-advertencia">
+                <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button onclick="encriptarMensaje();" id="btn-encriptar" class="btn-encriptar">Encriptar</button>
+                <button onclick="desencriptarMensaje();" class="btn-desencriptar">Desencriptar</button>
+            </div>
+             
+        </section>
+        <section class="seccion-dos">
+            <div class="textarea-wrapper">
+                <textarea class="output-encriptado" cols="20" rows="10"></textarea>
+                <div class="mensaje">
+                    <img src="/img/Muneco.png" class="muneco" alt="muneco">
+                    
+                    <h2 id="titulo"></h2>
+                    <p id="parrafo"></p>
+               
+                </div>
+                <button onclick="copiarAlPortapapeles()" ="btn-copiar" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Valeria Marín, 2024.</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
