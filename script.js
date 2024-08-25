@@ -50,7 +50,7 @@ function desencriptar(stringDesencriptada){
 
     function desencriptarMensaje(){
         const textoEncriptado = desencriptar(input.value)
-        input.value = textoEncriptado;
+        output.value = textoEncriptado;
             
     }
 
